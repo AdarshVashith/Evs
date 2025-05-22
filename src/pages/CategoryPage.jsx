@@ -4,27 +4,7 @@ import { FiBatteryCharging, FiTool } from 'react-icons/fi'
 
 const CategoryPage = () => {
   const categories = [
-    {
-      id: 1,
-      title: '2-Wheelers',
-      description: 'Eco-friendly electric scooters and bikes for urban commuting with cutting-edge technology.',
-      image: 'https://global.honda/content/dam/site/global-en/newsroom-new/cq_img/news/2024/10/2241009eng/2241009eng_01.jpg',
-      link: '/category/two-wheelers'
-    },
-    {
-      id: 2,
-      title: '3-Wheelers',
-      description: 'Powerful electric auto-rickshaws and delivery vehicles for commercial and passenger transport.',
-      image: 'https://5.imimg.com/data5/SELLER/Default/2023/4/301011384/ML/OB/WR/50896740/euler-hiload-ev-full-open-body-cargo-auto-three-wheeler-commercial-vehicle.png',
-      link: '/category/three-wheelers'
-    },
-    {
-      id: 3,
-      title: 'Battery Services',
-      description: 'Expert battery maintenance, diagnostics and repair services for all types of EV batteries.',
-      image: 'https://www.automotivepowertraintechnologyinternational.com/wp-content/uploads/2022/09/IONETIC-rendering-1-e1662464875437.png',
-      link: '/category/battery-service'
-    }
+ 
   ]
 
   const services = [
@@ -46,32 +26,11 @@ const CategoryPage = () => {
 
   return (
     <div className="pt-20">
-      <motion.section
-        className="bg-bharat-green-500 text-white py-20"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Product Categories</h1>
-          <p className="text-xl max-w-3xl">
-            Explore our range of electric vehicles and specialized service options designed to meet your mobility needs.
-          </p>
-        </div>
-      </motion.section>
+
 
       <motion.section
-        className="py-20"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="container mx-auto px-4">
-          <h2 className="section-title">Electric Vehicles</h2>
-          <p className="section-subtitle">
-            Our range of electric vehicles combines performance, reliability, and style for a sustainable future.
-          </p>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {categories.map(category => (
               <Link key={category.id} to={category.link}>
