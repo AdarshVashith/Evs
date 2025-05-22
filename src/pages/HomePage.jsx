@@ -10,20 +10,8 @@ const HomePage = () => {
   const scale = useTransform(scrollYProgress, [0, 0.3], [1, 0.8])
 
   const categories = [
-    {
-      id: 1,
-      title: '2-Wheelers',
-      description: 'Eco-friendly electric scooters and bikes for urban commuting with cutting-edge technology.',
-      image: 'https://global.honda/content/dam/site/global-en/newsroom-new/cq_img/news/2024/10/2241009eng/2241009eng_01.jpg',
-      link: '/category'
-    },
-    {
-      id: 2,
-      title: '3-Wheelers',
-      description: 'Powerful electric auto-rickshaws and delivery vehicles for commercial and passenger transport.',
-      image: 'https://5.imimg.com/data5/SELLER/Default/2023/4/301011384/ML/OB/WR/50896740/euler-hiload-ev-full-open-body-cargo-auto-three-wheeler-commercial-vehicle.png',
-      link: '/category'
-    },
+
+
     {
       id: 3,
       title: 'Battery Services',
